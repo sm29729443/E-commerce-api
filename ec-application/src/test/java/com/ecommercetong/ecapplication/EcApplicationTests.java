@@ -1,10 +1,10 @@
-package com.ecommercetong.ecauthorization;
+package com.ecommercetong.ecapplication;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class EcAuthorizationApplicationTests {
+class EcApplicationTests {
 
     @Test
     void contextLoads() {
