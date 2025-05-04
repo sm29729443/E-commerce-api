@@ -1,0 +1,151 @@
+<svg viewBox="0 0 1000 800" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="1000" height="800" fill="#f8f9fa"/>
+  
+  <!-- 標題 -->
+  <text x="500" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">電商系統結構樹狀圖</text>
+  
+  <!-- 根節點：首頁 -->
+  <rect x="450" y="60" width="100" height="40" rx="5" fill="#4a86e8" stroke="#2a5db0" stroke-width="2"/>
+  <text x="500" y="85" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">首頁</text>
+  
+  <!-- 主要類別：用戶相關 -->
+  <rect x="50" y="150" width="100" height="40" rx="5" fill="#6aa84f" stroke="#38761d" stroke-width="2"/>
+  <text x="100" y="175" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">用戶相關</text>
+  <line x1="450" y1="100" x2="100" y2="150" stroke="#666" stroke-width="1.5" stroke-dasharray="5,3"/>
+  
+  <!-- 用戶相關子頁面 -->
+  <rect x="10" y="230" width="100" height="35" rx="5" fill="#93c47d" stroke="#6aa84f" stroke-width="1.5"/>
+  <text x="60" y="252" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">登入/註冊</text>
+  <line x1="100" y1="190" x2="60" y2="230" stroke="#666" stroke-width="1.5" stroke-dasharray="3,2"/>
+  
+  <rect x="50" y="290" width="100" height="35" rx="5" fill="#93c47d" stroke="#6aa84f" stroke-width="1.5"/>
+  <text x="100" y="312" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">個人資料</text>
+  <line x1="100" y1="190" x2="100" y2="290" stroke="#666" stroke-width="1.5" stroke-dasharray="3,2"/>
+  
+  <rect x="90" y="230" width="100" height="35" rx="5" fill="#93c47d" stroke="#6aa84f" stroke-width="1.5"/>
+  <text x="140" y="252" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">願望清單</text>
+  <line x1="100" y1="190" x2="140" y2="230" stroke="#666" stroke-width="1.5" stroke-dasharray="3,2"/>
+  
+  <!-- 主要類別：產品相關 -->
+  <rect x="250" y="150" width="100" height="40" rx="5" fill="#e69138" stroke="#b45f06" stroke-width="2"/>
+  <text x="300" y="175" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">產品相關</text>
+  <line x1="450" y1="100" x2="300" y2="150" stroke="#666" stroke-width="1.5" stroke-dasharray="5,3"/>
+  
+  <!-- 產品相關子頁面 -->
+  <rect x="210" y="230" width="100" height="35" rx="5" fill="#f9cb9c" stroke="#e69138" stroke-width="1.5"/>
+  <text x="260" y="252" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">產品列表</text>
+  <line x1="300" y1="190" x2="260" y2="230" stroke="#666" stroke-width="1.5" stroke-dasharray="3,2"/>
+  
+  <rect x="250" y="290" width="100" height="35" rx="5" fill="#f9cb9c" stroke="#e69138" stroke-width="1.5"/>
+  <text x="300" y="312" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">產品詳情</text>
+  <line x1="300" y1="190" x2="300" y2="290" stroke="#666" stroke-width="1.5" stroke-dasharray="3,2"/>
+  
+  <rect x="290" y="230" width="100" height="35" rx="5" fill="#f9cb9c" stroke="#e69138" stroke-width="1.5"/>
+  <text x="340" y="252" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">搜索/篩選</text>
+  <line x1="300" y1="190" x2="340" y2="230" stroke="#666" stroke-width="1.5" stroke-dasharray="3,2"/>
+  
+  <!-- 產品詳情子頁面 -->
+  <rect x="210" y="350" width="100" height="35" rx="5" fill="#ffd966" stroke="#bf9000" stroke-width="1.5"/>
+  <text x="260" y="372" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">產品評價</text>
+  <line x1="300" y1="325" x2="260" y2="350" stroke="#666" stroke-width="1.5" stroke-dasharray="3,2"/>
+  
+  <rect x="290" y="350" width="100" height="35" rx="5" fill="#ffd966" stroke="#bf9000" stroke-width="1.5"/>
+  <text x="340" y="372" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">相關產品</text>
+  <line x1="300" y1="325" x2="340" y2="350" stroke="#666" stroke-width="1.5" stroke-dasharray="3,2"/>
+  
+  <!-- 主要類別：購物車/結帳 -->
+  <rect x="450" y="150" width="100" height="40" rx="5" fill="#a64d79" stroke="#741b47" stroke-width="2"/>
+  <text x="500" y="175" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">購物車/結帳</text>
+  <line x1="500" y1="100" x2="500" y2="150" stroke="#666" stroke-width="1.5" stroke-dasharray="5,3"/>
+  
+  <!-- 購物車/結帳子頁面 -->
+  <rect x="410" y="230" width="100" height="35" rx="5" fill="#d5a6bd" stroke="#a64d79" stroke-width="1.5"/>
+  <text x="460" y="252" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">購物車</text>
+  <line x1="500" y1="190" x2="460" y2="230" stroke="#666" stroke-width="1.5" stroke-dasharray="3,2"/>
+  
+  <rect x="490" y="230" width="100" height="35" rx="5" fill="#d5a6bd" stroke="#a64d79" stroke-width="1.5"/>
+  <text x="540" y="252" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">結帳流程</text>
+  <line x1="500" y1="190" x2="540" y2="230" stroke="#666" stroke-width="1.5" stroke-dasharray="3,2"/>
+  
+  <!-- 結帳流程子頁面 -->
+  <rect x="450" y="290" width="100" height="35" rx="5" fill="#e06666" stroke="#990000" stroke-width="1.5"/>
+  <text x="500" y="312" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">配送資訊</text>
+  <line x1="540" y1="265" x2="500" y2="290" stroke="#666" stroke-width="1.5" stroke-dasharray="3,2"/>
+  
+  <rect x="530" y="290" width="100" height="35" rx="5" fill="#e06666" stroke="#990000" stroke-width="1.5"/>
+  <text x="580" y="312" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">付款方式</text>
+  <line x1="540" y1="265" x2="580" y2="290" stroke="#666" stroke-width="1.5" stroke-dasharray="3,2"/>
+  
+  <!-- 主要類別：訂單相關 -->
+  <rect x="650" y="150" width="100" height="40" rx="5" fill="#cc0000" stroke="#990000" stroke-width="2"/>
+  <text x="700" y="175" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">訂單相關</text>
+  <line x1="550" y1="100" x2="700" y2="150" stroke="#666" stroke-width="1.5" stroke-dasharray="5,3"/>
+  
+  <!-- 訂單相關子頁面 -->
+  <rect x="610" y="230" width="100" height="35" rx="5" fill="#ea9999" stroke="#cc0000" stroke-width="1.5"/>
+  <text x="660" y="252" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">訂單確認</text>
+  <line x1="700" y1="190" x2="660" y2="230" stroke="#666" stroke-width="1.5" stroke-dasharray="3,2"/>
+  
+  <rect x="650" y="290" width="100" height="35" rx="5" fill="#ea9999" stroke="#cc0000" stroke-width="1.5"/>
+  <text x="700" y="312" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">訂單歷史</text>
+  <line x1="700" y1="190" x2="700" y2="290" stroke="#666" stroke-width="1.5" stroke-dasharray="3,2"/>
+  
+  <rect x="690" y="230" width="100" height="35" rx="5" fill="#ea9999" stroke="#cc0000" stroke-width="1.5"/>
+  <text x="740" y="252" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">訂單跟踪</text>
+  <line x1="700" y1="190" x2="740" y2="230" stroke="#666" stroke-width="1.5" stroke-dasharray="3,2"/>
+  
+  <!-- 主要類別：後台管理 -->
+  <rect x="850" y="150" width="100" height="40" rx="5" fill="#674ea7" stroke="#351c75" stroke-width="2"/>
+  <text x="900" y="175" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">後台管理</text>
+  <line x1="550" y1="100" x2="900" y2="150" stroke="#666" stroke-width="1.5" stroke-dasharray="5,3"/>
+  
+  <!-- 後台管理子頁面 -->
+  <rect x="810" y="230" width="100" height="35" rx="5" fill="#b4a7d6" stroke="#674ea7" stroke-width="1.5"/>
+  <text x="860" y="252" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">用戶管理</text>
+  <line x1="900" y1="190" x2="860" y2="230" stroke="#666" stroke-width="1.5" stroke-dasharray="3,2"/>
+  
+  <rect x="850" y="290" width="100" height="35" rx="5" fill="#b4a7d6" stroke="#674ea7" stroke-width="1.5"/>
+  <text x="900" y="312" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">產品管理</text>
+  <line x1="900" y1="190" x2="900" y2="290" stroke="#666" stroke-width="1.5" stroke-dasharray="3,2"/>
+  
+  <rect x="890" y="230" width="100" height="35" rx="5" fill="#b4a7d6" stroke="#674ea7" stroke-width="1.5"/>
+  <text x="940" y="252" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">訂單管理</text>
+  <line x1="900" y1="190" x2="940" y2="230" stroke="#666" stroke-width="1.5" stroke-dasharray="3,2"/>
+  
+  <!-- 技術架構說明 -->
+  <rect x="50" y="430" width="900" height="330" rx="8" fill="white" stroke="#ddd" stroke-width="2"/>
+  <text x="500" y="460" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">系統技術架構</text>
+  
+  <!-- 前端 -->
+  <text x="150" y="500" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">前端</text>
+  <rect x="80" y="510" width="140" height="120" rx="5" fill="#f2f2f2" stroke="#ddd" stroke-width="1"/>
+  <text x="100" y="540" font-family="Arial, sans-serif" font-size="14" text-anchor="start" fill="#333">• Angular</text>
+  <text x="100" y="570" font-family="Arial, sans-serif" font-size="14" text-anchor="start" fill="#333">• Tailwind CSS</text>
+  <text x="100" y="600" font-family="Arial, sans-serif" font-size="14" text-anchor="start" fill="#333">• Material UI</text>
+  
+  <!-- 後端 -->
+  <text x="350" y="500" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">後端</text>
+  <rect x="250" y="510" width="200" height="150" rx="5" fill="#f2f2f2" stroke="#ddd" stroke-width="1"/>
+  <text x="270" y="540" font-family="Arial, sans-serif" font-size="14" text-anchor="start" fill="#333">• Spring Boot</text>
+  <text x="270" y="570" font-family="Arial, sans-serif" font-size="14" text-anchor="start" fill="#333">• Spring MVC</text>
+  <text x="270" y="600" font-family="Arial, sans-serif" font-size="14" text-anchor="start" fill="#333">• Spring DATA REST</text>
+  <text x="270" y="630" font-family="Arial, sans-serif" font-size="14" text-anchor="start" fill="#333">• Spring Security</text>
+  <text x="270" y="660" font-family="Arial, sans-serif" font-size="14" text-anchor="start" fill="#333">• Spring DATA REDIS</text>
+  
+  <!-- 數據庫 -->
+  <text x="650" y="500" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">數據庫</text>
+  <rect x="550" y="510" width="200" height="120" rx="5" fill="#f2f2f2" stroke="#ddd" stroke-width="1"/>
+  <text x="570" y="540" font-family="Arial, sans-serif" font-size="14" text-anchor="start" fill="#333">• MySQL (關聯式)</text>
+  <text x="570" y="570" font-family="Arial, sans-serif" font-size="14" text-anchor="start" fill="#333">• Redis (非關聯式)</text>
+  <text x="570" y="600" font-family="Arial, sans-serif" font-size="14" text-anchor="start" fill="#333">• 緩存層 (Cache)</text>
+  
+  <!-- 開發重點 -->
+  <text x="850" y="500" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">開發重點</text>
+  <rect x="780" y="510" width="140" height="150" rx="5" fill="#f2f2f2" stroke="#ddd" stroke-width="1"/>
+  <text x="800" y="540" font-family="Arial, sans-serif" font-size="14" text-anchor="start" fill="#333">• SQL 優化</text>
+  <text x="800" y="570" font-family="Arial, sans-serif" font-size="14" text-anchor="start" fill="#333">• B+ Tree 索引</text>
+  <text x="800" y="600" font-family="Arial, sans-serif" font-size="14" text-anchor="start" fill="#333">• SOLID 原則</text>
+  <text x="800" y="630" font-family="Arial, sans-serif" font-size="14" text-anchor="start" fill="#333">• 設計模式</text>
+  <text x="800" y="660" font-family="Arial, sans-serif" font-size="14" text-anchor="start" fill="#333">• Java 新特性</text>
+</svg>
