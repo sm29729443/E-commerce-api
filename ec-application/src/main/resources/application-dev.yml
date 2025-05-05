@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: ec-application
+
+
+
+cors:
+  allowed-origins: origins=http://localhost:[*]
+
