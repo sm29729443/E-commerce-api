@@ -10,7 +10,6 @@
     </parent>
 
     <modules>
-        <module>ec-authorization</module>
         <module>ec-common</module>
         <module>ec-application</module>
     </modules>
