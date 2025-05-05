@@ -1,8 +1,19 @@
 spring:
   application:
     name: ec-application
-
-
+#  mail:
+#    host: smtp.gmail.com
+#    port: 587
+#    username: sm29729443@gmail.com
+#    password: jijvxkixecuyxyip
+#    properties:
+#      mail:
+#        smtp:
+#          auth: true
+#          starttls:
+#            enable: true
+#    default-encoding: utf-8
+#
 
 cors:
   allowed-origins: origins=http://localhost:[*]
