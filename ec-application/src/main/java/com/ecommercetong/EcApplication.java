@@ -1,4 +1,4 @@
-package com.ecommercetong.ecapplication;
+package com.ecommercetong;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
