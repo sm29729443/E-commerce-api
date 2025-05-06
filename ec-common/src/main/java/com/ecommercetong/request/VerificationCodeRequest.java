@@ -9,7 +9,7 @@ import lombok.Data;
 public class VerificationCodeRequest {
     @NotNull(message = "Verification code is required")
     @Email(message = "Email format is not valid")
-    @Pattern(regexp = ".*@gmail\\.com")
+    @Pattern(message = "目前只支持 Gmail", regexp = ".*@gmail\\.com")
     private String mail;
 
 }

@@ -4,6 +4,7 @@ import com.ecommercetong.request.VerificationCodeRequest;
 import com.ecommercetong.response.ApiResponse;
 import com.ecommercetong.service.mail.MailService;
 import com.ecommercetong.service.verification.VerificationCodeService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -20,7 +21,7 @@ public class AuthController {
   }
 
   @PostMapping("/auth/verification-code")
-  public ResponseEntity<ApiResponse> issueVerificationCode(@RequestBody VerificationCodeRequest verificationCodeRequest) {
+  public ResponseEntity<ApiResponse<?>> issueVerificationCode(@RequestBody @Valid VerificationCodeRequest verificationCodeRequest) {
     verificationCodeService.generateVerificationCode(verificationCodeRequest.getMail());
     return ResponseEntity.ok().body(
             ApiResponse.wrapperResponse(HttpStatus.OK,null,"issue verification code success"));
