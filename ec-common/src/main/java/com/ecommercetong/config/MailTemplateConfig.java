@@ -1,6 +1,6 @@
 package com.ecommercetong.config;
 
-import com.ecommercetong.enums.MailTemplateName;
+import com.ecommercetong.enums.MailTemplateEnum;
 import com.ecommercetong.template.LoginSuccessTemplate;
 import com.ecommercetong.template.MailTemplate;
 import com.ecommercetong.template.VerificationCodeMailTemplate;
@@ -15,11 +15,11 @@ import java.util.Map;
 public class MailTemplateConfig {
 
   @Bean(name = "mailTemplateMap")
-  public Map<MailTemplateName, MailTemplate> setMailTemplateMap() {
-    HashMap<MailTemplateName, MailTemplate> mailTemplateMap = new HashMap<>();
+  public Map<MailTemplateEnum, MailTemplate> setMailTemplateMap() {
+    HashMap<MailTemplateEnum, MailTemplate> mailTemplateMap = new HashMap<>();
     mailTemplateMap.put(
-        MailTemplateName.VerificationCodeMailTemplate, new VerificationCodeMailTemplate());
-    mailTemplateMap.put(MailTemplateName.LoginSuccessMailTemplate, new LoginSuccessTemplate());
+            MailTemplateEnum.VerificationCodeMailTemplate, new VerificationCodeMailTemplate());
+    mailTemplateMap.put(MailTemplateEnum.LoginSuccessMailTemplate, new LoginSuccessTemplate());
     return mailTemplateMap;
   }
 }
