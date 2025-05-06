@@ -13,7 +13,7 @@ public class VerificationCodeMailTemplate implements MailTemplate {
     }
     @Override
     public String buildContent(Map<String, Object> templateParams) {
-        return "驗證碼信件內容";
+        return "您的驗證碼為:" + templateParams.get("verificationCode");
     }
 
 }
