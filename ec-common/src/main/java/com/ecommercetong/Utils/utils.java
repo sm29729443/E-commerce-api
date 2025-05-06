@@ -2,7 +2,7 @@ package com.ecommercetong.Utils;
 
 import java.util.Random;
 
-public class Utils {
+public class utils {
 
     public static String generateRandomCode(int length) {
         if(length < 1) {
