@@ -1,8 +1,8 @@
-package com.ecommercetong.Utils;
+package com.ecommercetong.utils;
 
 import java.util.Random;
 
-public class utils {
+public class Utils {
 
     public static String generateRandomCode(int length) {
         if(length < 1) {
