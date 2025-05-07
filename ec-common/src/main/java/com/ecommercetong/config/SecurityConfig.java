@@ -18,7 +18,7 @@ import com.ecommercetong.properties.CorsProperties;
 
 import java.util.List;
 
-@EnableWebSecurity(debug = true)
+@EnableWebSecurity(debug = false)
 @Configuration
 @EnableConfigurationProperties(CorsProperties.class)
 public class SecurityConfig {
