@@ -13,6 +13,7 @@ import java.util.Map;
 @Configuration
 public class MailTemplateConfig {
 
+  // 將業務場景映射到模板
   @Bean(name = "mailTemplateMap")
   public Map<BusinessScenarioEnum, MailTemplate> setMailTemplateMap() {
     HashMap<BusinessScenarioEnum, MailTemplate> mailTemplateMap = new HashMap<>();

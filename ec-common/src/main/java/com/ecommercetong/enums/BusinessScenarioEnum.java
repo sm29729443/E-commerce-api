@@ -1,6 +1,5 @@
 package com.ecommercetong.enums;
 
-import com.ecommercetong.exception.BusinessScenarioNotFoundException;
 import lombok.*;
 
 @Getter
@@ -11,7 +10,7 @@ public enum BusinessScenarioEnum {
   LOGIN_SUCCESS("login-success"); // 登入成功通知信
 
   private String scenario;
-
+  // 將業務場景映射成 Enum
   public static BusinessScenarioEnum decode(String scenario) {
     for (BusinessScenarioEnum businessScenarioEnum : BusinessScenarioEnum.values()) {
       if (businessScenarioEnum.scenario.equals(scenario)) {
