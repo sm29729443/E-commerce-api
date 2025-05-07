@@ -1,15 +1,12 @@
 package com.ecommercetong.service.mail;
 
-import com.ecommercetong.enums.MailTemplateEnum;
+import com.ecommercetong.enums.BusinessScenarioEnum;
 import com.ecommercetong.template.MailTemplate;
-import jakarta.validation.constraints.Email;
-import jakarta.validation.constraints.NotNull;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
-import org.springframework.validation.annotation.Validated;
 
 import java.util.Map;
 
@@ -21,23 +18,23 @@ public class MailServiceImpl implements MailService {
 
     @Autowired
     @Qualifier("mailTemplateMap")
-    private Map<MailTemplateEnum, MailTemplate> mailTemplateMap;
+    private Map<BusinessScenarioEnum, MailTemplate> mailTemplateMap;
 
     @Override
     public void sendMailWithTemplate(String sendTo,
-                                     MailTemplateEnum mailTemplateEnum,
-                                     Map<String, Object> templateParams) {
+                                     BusinessScenarioEnum mailTemplateEnum,
+                                     Map<String, Object> scenarioEnum) {
         MailTemplate mailTemplate = mailTemplateMap.get(mailTemplateEnum);
         SimpleMailMessage simpleMailMessage = new SimpleMailMessage();
         simpleMailMessage.setTo(sendTo);
         simpleMailMessage.setSubject(mailTemplate.getSubject());
-        simpleMailMessage.setText(mailTemplate.buildContent(templateParams));
+        simpleMailMessage.setText(mailTemplate.buildContent(scenarioEnum));
         javaMailSender.send(simpleMailMessage);
 
     }
 
     @Override
-    public void sendMailWithTemplate(String sendTo, MailTemplateEnum mailTemplateEnum) {
-        sendMailWithTemplate(sendTo, mailTemplateEnum, null);
+    public void sendMailWithTemplate(String sendTo, BusinessScenarioEnum scenarioEnum) {
+        sendMailWithTemplate(sendTo, scenarioEnum, null);
     }
 }

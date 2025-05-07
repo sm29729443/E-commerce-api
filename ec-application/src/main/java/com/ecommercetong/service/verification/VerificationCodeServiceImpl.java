@@ -1,6 +1,6 @@
 package com.ecommercetong.service.verification;
 
-import com.ecommercetong.enums.MailTemplateEnum;
+import com.ecommercetong.enums.BusinessScenarioEnum;
 import com.ecommercetong.exception.CustomizedException;
 import com.ecommercetong.service.mail.MailService;
 import com.ecommercetong.utils.Utils;
@@ -53,8 +53,8 @@ public class VerificationCodeServiceImpl implements VerificationCodeService {
             public void run() {
                 HashMap<String, Object> templateParams = new HashMap<>();
                 templateParams.put("verificationCode", code);
-                MailTemplateEnum verifyCode = MailTemplateEnum.decode("verifyCode");
-                mailService.sendMailWithTemplate(mail, verifyCode, templateParams);
+                BusinessScenarioEnum scenarioEnum = BusinessScenarioEnum.decode("verify-code");
+                mailService.sendMailWithTemplate(mail, scenarioEnum, templateParams);
             }
         }.start();
     }
