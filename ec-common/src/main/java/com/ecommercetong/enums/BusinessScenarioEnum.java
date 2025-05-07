@@ -1,6 +1,8 @@
 package com.ecommercetong.enums;
 
+import com.ecommercetong.exception.BusinessScenarioException;
 import lombok.*;
+import org.springframework.http.HttpStatus;
 
 @Getter
 @NoArgsConstructor
@@ -17,6 +19,7 @@ public enum BusinessScenarioEnum {
         return businessScenarioEnum;
       }
     }
-    throw new BusinessScenarioNotFoundException();
+    throw new BusinessScenarioException(HttpStatus.INTERNAL_SERVER_ERROR,
+            "scenario enum not found");
   }
 }
